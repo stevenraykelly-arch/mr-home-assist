@@ -1,0 +1,13 @@
+
+# .gitignore
+.env
+credentials.json
+token.json
+__pycache__/
+*.pyc
+node_modules/
+.next/
+dist/
+.tmp/
+build/
+.DS_Store
