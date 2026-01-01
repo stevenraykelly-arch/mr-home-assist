@@ -5,6 +5,10 @@ import { ArrowRight, Check, MapPin, Phone, Star } from "lucide-react";
 export default function Home() {
     return (
         <main className="flex min-h-screen flex-col items-center justify-between">
+            {/* CI/CD Verification Header */}
+            <div className="w-full bg-emerald-600 text-white text-center py-2 font-bold tracking-widest text-sm uppercase">
+                Under New Management - Auto Deployed 🚀
+            </div>
             {/* Hero Section */}
             <section className="relative w-full h-[90vh] flex items-center justify-center overflow-hidden bg-stone-900">
                 <div className="absolute inset-0 z-0 opacity-60">
