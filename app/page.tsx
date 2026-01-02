@@ -4,112 +4,126 @@ import { ArrowRight, Check, MapPin, Phone, Star } from "lucide-react";
 
 export default function Home() {
     return (
-        <main className="flex min-h-screen flex-col items-center justify-between font-sans text-cyan-950 bg-white">
+        <main className="flex min-h-screen flex-col items-center justify-between font-sans text-stone-900 bg-stone-50">
             {/* Nav */}
-            <nav className="fixed top-0 w-full z-50 bg-white/70 backdrop-blur-xl border-b border-cyan-100">
+            <nav className="fixed top-0 w-full z-50 bg-white/80 backdrop-blur-xl border-b border-stone-200">
                 <div className="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
                     <div className="flex items-center gap-3">
-                        <div className="w-12 h-12 bg-cyan-500 rounded-2xl flex items-center justify-center shadow-lg shadow-cyan-200">
+                        <div className="w-12 h-12 bg-amber-600 rounded-xl flex items-center justify-center shadow-lg shadow-amber-200">
                             <Star className="text-white w-7 h-7 fill-current" />
                         </div>
-                        <span className="font-black text-2xl tracking-tight text-cyan-950">ST KILDA <span className="text-cyan-500 font-light">WINDOWS</span></span>
+                        <span className="font-black text-2xl tracking-tighter text-stone-900 uppercase">Handyman <span className="text-amber-600">Phillip Island</span></span>
                     </div>
-                    <Link href="#quote" className="bg-cyan-600 text-white px-8 py-3 rounded-full text-sm font-black uppercase tracking-widest hover:bg-cyan-700 transition-all shadow-lg shadow-cyan-100">
-                        Get a Quote
-                    </Link>
+                    <div className="hidden md:flex gap-8 items-center text-sm font-bold uppercase tracking-widest text-stone-500">
+                        <Link href="#services">Services</Link>
+                        <Link href="tel:0400000000" className="bg-stone-900 text-white px-6 py-3 rounded-full hover:bg-stone-800 transition-all flex items-center gap-2">
+                            <Phone className="w-4 h-4" /> 0400 000 000
+                        </Link>
+                    </div>
                 </div>
             </nav>
 
             {/* Hero Section */}
-            <section className="relative w-full min-h-screen flex items-center pt-20 overflow-hidden">
-                <div className="absolute inset-0 z-0">
-                    <div className="w-full h-full bg-[url('/window_cleaner_hero.jpg')] bg-cover bg-center scale-105 active:scale-100 transition-transform duration-1000" />
-                    <div className="absolute inset-0 bg-gradient-to-b from-white/20 via-transparent to-white/90" />
-                </div>
-
-                <div className="relative z-10 max-w-7xl mx-auto px-6 w-full">
-                    <div className="max-w-3xl bg-white/20 backdrop-blur-md p-10 md:p-16 rounded-[40px] border border-white/30 shadow-2xl">
-                        <div className="inline-flex items-center gap-2 px-4 py-2 bg-cyan-500 text-white rounded-full text-xs font-black uppercase tracking-widest mb-8 shadow-lg shadow-cyan-200">
-                            Crystal Clear Views in 3182
+            <section className="relative w-full pt-32 pb-20 md:pt-48 md:pb-40 px-6 overflow-hidden">
+                <div className="max-w-7xl mx-auto grid lg:grid-cols-2 gap-20 items-center">
+                    <div className="relative z-10">
+                        <div className="inline-flex items-center gap-2 px-4 py-2 bg-amber-50 text-amber-700 rounded-full text-xs font-black uppercase tracking-widest mb-10 border border-amber-100">
+                            🏝️ Trusted Island Local
                         </div>
-                        <h1 className="text-6xl md:text-9xl font-black text-cyan-950 mb-8 leading-[0.85] tracking-tighter">
-                            St Kilda's <br />
-                            <span className="text-cyan-600">Purest</span> <br />
-                            Finish.
+                        <h1 className="text-6xl md:text-9xl font-black text-stone-900 leading-[0.85] mb-10 tracking-tighter">
+                            Your Home, <br />
+                            <span className="text-amber-600">Insulated</span> <br />
+                            & Fixed.
                         </h1>
-                        <p className="text-cyan-900/80 text-xl md:text-2xl mb-12 leading-relaxed max-w-xl font-medium">
-                            Premium window cleaning for St Kilda's finest apartments and coastal homes. See the bay like never before.
+                        <p className="text-stone-500 text-xl md:text-2xl mb-14 max-w-xl font-medium leading-relaxed">
+                            Expert maintenance for Phillip Island holiday homes. Specializing in deck restoration, coastal repairs, and property care while you're away.
                         </p>
 
-                        <div className="flex flex-col sm:flex-row gap-4">
-                            <Link href="#quote" className="px-10 py-5 bg-cyan-600 text-white rounded-2xl font-black text-lg hover:bg-cyan-700 transition-all shadow-xl shadow-cyan-200 flex items-center justify-center gap-3 group">
-                                Book Now <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
+                        <div className="flex flex-col sm:flex-row gap-5">
+                            <Link href="#quote" className="px-12 py-6 bg-amber-600 text-white rounded-2xl font-black text-xl hover:bg-amber-700 transition-all shadow-2xl shadow-amber-200 flex items-center justify-center gap-3 group">
+                                Get Your Quote <ArrowRight className="w-6 h-6 group-hover:translate-x-1 transition-transform" />
                             </Link>
-                            <Link href="tel:0400000000" className="px-10 py-5 bg-white text-cyan-950 border-2 border-cyan-100 rounded-2xl font-black text-lg hover:bg-cyan-50 transition-all flex items-center justify-center gap-3">
-                                <Phone className="w-5 h-5" /> 0400 000 000
-                            </Link>
+                        </div>
+
+                        <div className="mt-16 flex flex-wrap items-center gap-10 opacity-70">
+                            <div className="flex items-center gap-2 font-bold text-sm uppercase tracking-widest">
+                                <Check className="w-5 h-5 text-amber-600" /> Salt-Air Proofing
+                            </div>
+                            <div className="flex items-center gap-2 font-bold text-sm uppercase tracking-widest">
+                                <Check className="w-5 h-5 text-amber-600" /> Deck Restoration
+                            </div>
+                            <div className="flex items-center gap-2 font-bold text-sm uppercase tracking-widest">
+                                <Check className="w-5 h-5 text-amber-600" /> Fully Insured
+                            </div>
+                        </div>
+                    </div>
+
+                    <div className="relative">
+                        <div className="absolute -inset-6 bg-amber-200/30 rounded-[60px] -rotate-2 blur-2xl" />
+                        <div className="relative z-10 aspect-square rounded-[48px] overflow-hidden shadow-2xl border-8 border-white">
+                            <div className="w-full h-full bg-[url('/handyman_pi_hero.jpg')] bg-cover bg-center" />
+                        </div>
+                        <div className="absolute -bottom-12 -right-12 bg-white p-10 rounded-[40px] shadow-2xl z-20 border border-stone-100 hidden xl:block">
+                            <div className="flex gap-1 text-amber-400 mb-3">
+                                <Star className="w-6 h-6 fill-current" />
+                                <Star className="w-6 h-6 fill-current" />
+                                <Star className="w-6 h-6 fill-current" />
+                                <Star className="w-6 h-6 fill-current" />
+                                <Star className="w-6 h-6 fill-current" />
+                            </div>
+                            <div className="font-black text-3xl text-stone-900 leading-none">Local Favourite</div>
+                            <div className="text-stone-400 font-bold uppercase text-xs tracking-[0.2em] mt-2">Serving Cowes to San Remo</div>
                         </div>
                     </div>
                 </div>
             </section>
 
-            {/* Features */}
-            <section className="py-32 bg-white w-full px-6">
-                <div className="max-w-7xl mx-auto grid md:grid-cols-3 gap-16">
-                    <div className="space-y-6">
-                        <div className="w-16 h-16 bg-cyan-50 rounded-3xl flex items-center justify-center">
-                            <Check className="w-8 h-8 text-cyan-600" />
-                        </div>
-                        <h3 className="text-3xl font-black tracking-tight">Salt-Air Specialized</h3>
-                        <p className="text-cyan-900/60 leading-relaxed font-medium text-lg">We use specialized eco-friendly solutions to cut through St Kilda's coastal salt spray and grime.</p>
-                    </div>
-                    <div className="space-y-6">
-                        <div className="w-16 h-16 bg-cyan-50 rounded-3xl flex items-center justify-center">
-                            <Star className="w-8 h-8 text-cyan-600" />
-                        </div>
-                        <h3 className="text-3xl font-black tracking-tight">Luxury Care</h3>
-                        <p className="text-cyan-900/60 leading-relaxed font-medium text-lg">Meticulous cleaning of sills, frames, and tracks. We leave your home cleaner than we found it.</p>
-                    </div>
-                    <div className="space-y-6">
-                        <div className="w-16 h-16 bg-cyan-50 rounded-3xl flex items-center justify-center">
-                            <MapPin className="w-8 h-8 text-cyan-600" />
-                        </div>
-                        <h3 className="text-3xl font-black tracking-tight">Pure 3182 Local</h3>
-                        <p className="text-cyan-900/60 leading-relaxed font-medium text-lg">Serving St Kilda, St Kilda East, and Elwood with prompt, professional service every day.</p>
+            {/* Specializations */}
+            <section id="services" className="w-full py-32 bg-white border-t border-stone-200 px-6">
+                <div className="max-w-7xl mx-auto">
+                    <h2 className="text-4xl md:text-6xl font-black text-center mb-24 tracking-tight underline decoration-amber-500/30 decoration-8 underline-offset-[12px]">Coastal Specializations</h2>
+                    <div className="grid md:grid-cols-3 gap-12">
+                        {[
+                            { title: "Deck Restoration", desc: "Sanding, oiling, and repairing weathered decks to withstand harsh Bass Strait conditions.", icon: <Star className="w-10 h-10 text-amber-600" /> },
+                            { title: "Holiday Home Care", desc: "Pre-arrival inspections, key-holding, and fast repairs for your beachfront investment.", icon: <Check className="w-10 h-10 text-amber-600" /> },
+                            { title: "General Maintenance", desc: "From leaking taps to window repairs—no island job is too small for us.", icon: <MapPin className="w-10 h-10 text-amber-600" /> }
+                        ].map((s, i) => (
+                            <div key={i} className="group p-12 bg-stone-50 rounded-[40px] hover:bg-stone-900 hover:text-white transition-all duration-500 cursor-default">
+                                <div className="mb-8">{s.icon}</div>
+                                <h3 className="text-3xl font-black mb-6 tracking-tight">{s.title}</h3>
+                                <p className="text-stone-500 group-hover:text-stone-300 leading-relaxed font-medium text-lg">{s.desc}</p>
+                            </div>
+                        ))}
                     </div>
                 </div>
             </section>
 
-            {/* Quote Form Overlay */}
-            <section id="quote" className="py-32 bg-cyan-950 w-full text-white relative">
-                <div className="absolute inset-0 opacity-10 bg-[url('https://www.transparenttextures.com/patterns/cubes.png')]" />
-                <div className="max-w-4xl mx-auto px-6 relative z-10 text-center">
-                    <h2 className="text-4xl md:text-7xl font-black mb-12 tracking-tight">Clearer skies await.</h2>
-                    <div className="bg-white/5 backdrop-blur-xl p-12 rounded-[48px] border border-white/10 shadow-2xl text-left">
-                        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                            <div className="space-y-2">
-                                <label className="text-xs font-black uppercase tracking-widest text-cyan-400">FullName</label>
-                                <input type="text" className="w-full bg-white/10 border border-white/20 rounded-xl p-4 text-white outline-none focus:border-cyan-500 transition-colors" />
-                            </div>
-                            <div className="space-y-2">
-                                <label className="text-xs font-black uppercase tracking-widest text-cyan-400">Email Address</label>
-                                <input type="email" className="w-full bg-white/10 border border-white/20 rounded-xl p-4 text-white outline-none focus:border-cyan-500 transition-colors" />
-                            </div>
-                            <div className="space-y-2 md:col-span-2">
-                                <label className="text-xs font-black uppercase tracking-widest text-cyan-400">Property Details (St Kilda Location)</label>
-                                <textarea className="w-full bg-white/10 border border-white/20 rounded-xl p-4 text-white outline-none focus:border-cyan-500 transition-colors h-32"></textarea>
-                            </div>
-                            <button className="md:col-span-2 bg-cyan-500 py-6 rounded-2xl font-black text-xl hover:bg-cyan-600 transition-all shadow-xl shadow-cyan-900/50">Send Inquiry</button>
-                        </div>
+            {/* CTA */}
+            <section id="quote" className="w-full py-40 px-6 bg-amber-600">
+                <div className="max-w-4xl mx-auto text-center">
+                    <h2 className="text-5xl md:text-8xl font-black text-white mb-10 tracking-tighter leading-none">Ready for Island Time?</h2>
+                    <p className="text-amber-100 text-xl md:text-2xl mb-16 font-medium">Leave the repairs to us. Relax and enjoy the island vida. Free estimates within 24 hours.</p>
+                    <div className="flex flex-col sm:flex-row gap-6 justify-center">
+                        <Link href="tel:0400000000" className="px-12 py-6 bg-white text-stone-900 rounded-2xl font-black text-xl hover:scale-105 transition-transform shadow-2xl">
+                            📞 Call 0400 000 000
+                        </Link>
+                        <Link href="mailto:island@handyman.com.au" className="px-12 py-6 bg-stone-900 text-white rounded-2xl font-black text-xl hover:scale-105 transition-transform shadow-2xl">
+                            💬 Message Us
+                        </Link>
                     </div>
                 </div>
             </section>
 
             {/* Footer */}
-            <footer className="w-full py-16 bg-white px-6 border-t border-cyan-50">
-                <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-8">
-                    <div className="font-black text-cyan-900 text-sm tracking-[0.3em] uppercase underline decoration-cyan-500 decoration-4 underline-offset-8">ST KILDA GLASS CO.</div>
-                    <div className="text-cyan-900/30 font-bold text-xs tracking-widest uppercase">Expert Window Cleaning • Area 3182 • © 2026</div>
+            <footer className="w-full py-20 bg-stone-950 text-stone-500 px-6">
+                <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-10">
+                    <div className="font-black text-white tracking-[0.4em] uppercase text-xs">Handyman Phillip Island • Est 2026</div>
+                    <div className="flex gap-10 font-bold uppercase text-[10px] tracking-[0.3em]">
+                        <span>Cowes</span>
+                        <span>Smiths Beach</span>
+                        <span>San Remo</span>
+                        <span>Cape Woolamai</span>
+                    </div>
                 </div>
             </footer>
         </main>
