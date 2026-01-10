@@ -41,6 +41,7 @@ Default to these elevated aesthetic principles:
 
 **Rule #2: Zero Repetition (Unique Images)**
 *   **Mandatory:** UNIQUE images only. Never reuse the same asset (e.g., hero.png) for multiple service cards. Each visual element must be distinct.
+*   **Asset Depth:** Every page (Service or Location) MUST feature 1-3 unique, generated images relevant to that specific topic. Do not rely on a single hero image.
 
 **Rule #3: ABN & Legal Display**
 *   **Mandatory:** NEVER invent a dummy ABN. Only display an ABN if explicitly provided in the User Details.

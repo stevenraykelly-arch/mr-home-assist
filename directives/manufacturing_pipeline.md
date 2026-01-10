@@ -34,8 +34,10 @@ Autonomous "Factory" for high-end trade sites using Astro (Static HTML) for maxi
 3. **Data Store**: Save brief to `.tmp/market_data.json`.
 
 ### Phase 3: Asset Creation
-1. **Prompt Engineering**: Write photorealistic, research-backed prompts for unique images.
-2. **Production**: Generate unique assets to `public/images/`.
+1.  **Prompt Engineering:** Write photorealistic, research-backed prompts for unique images.
+2.  **Production:** Generate unique assets to `public/images/`.
+    *   **Hero:** 1x Global Hero.
+    *   **Page-Specific:** 1-3x Unique images per Service/Location page (e.g., `retaining-detail.jpg`, `officer-estates.jpg`).
 
 ### Phase 4: Page Build & Component Assembly
 1. **Structure**: Use `src/layouts/Layout.astro` and `src/pages/index.astro`.
