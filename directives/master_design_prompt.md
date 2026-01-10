@@ -68,6 +68,7 @@ Every page MUST use a reusable `<SEO />` component:
 *   **Semantic HTML:** Use `<section>`, `<article>`, `<header>`, `<footer>`, and proper `<h1>`-`<h6>` hierarchy.
 *   **Clean URLs:** Maintain a logical hierarchy (e.g., `/services/asphalt-repairs`).
 *   **Schema Markup:** Implement `ServiceAreaBusiness` schema on all pages and `FAQPage` schema for all FAQ sections.
+*   **Content Depth (FAQ):** MANDATORY. Every homepage must include a "Local Expert FAQ" section (min. 600 words) answering specific regulatory, environmental, and cost questions for the target area.
 *   **System Integration:** Update `App.tsx` (Routing), `Layout.tsx` (Linking), `sitemap.xml`, and `robots.txt` for every new page.
 
 ---
