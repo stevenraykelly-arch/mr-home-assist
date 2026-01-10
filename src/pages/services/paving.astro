@@ -1,0 +1,59 @@
+---
+import Layout from '../../layouts/Layout.astro';
+
+const serviceSchema = JSON.stringify({
+  "@context": "https://schema.org",
+  "@type": "Service",
+  "name": "Paving & Hardscaping",
+  "provider": {
+    "@type": "LandscapingBusiness",
+    "name": "Pakenham Landscapers",
+    "image": "https://pakenhamlandscapers.com.au/images/hero.png"
+  },
+  "areaServed": {
+    "@type": "City",
+    "name": "Pakenham"
+  },
+  "description": "Premium paving and concreting services. Bluestone, Crazy Paving, and Exposed Aggregate driveways designed for soil movement.",
+  "serviceType": "Landscaping"
+});
+---
+
+<Layout 
+    title="Paving & Hardscaping Pakenham | Bluestone & Driveways" 
+    description="High-end paving and concreting for Pakenham homes. Expert installation of Crazy Paving, Bluestone, and Travertine on proper concrete bases."
+    schema={serviceSchema}
+>
+    <section class="relative py-24 bg-slate-900 overflow-hidden">
+        <div class="fixed inset-0 pointer-events-none opacity-[0.4] z-[0] bg-[url('https://www.transparenttextures.com/patterns/concrete-wall.png')] mix-blend-multiply"></div>
+        <div class="relative z-10 max-w-7xl mx-auto px-6">
+            <h1 class="text-5xl lg:text-6xl font-extrabold text-white mb-6">
+                Defined by <span class="text-emerald-500">Stone</span>.
+            </h1>
+            <p class="text-xl text-slate-300 max-w-2xl leading-relaxed">
+                From eclectic Crazy Paving to precision-cut Bluestone. We lay on concrete bases, not just sand, ensuring your path doesn't sink next winter.
+            </p>
+        </div>
+    </section>
+
+    <section class="py-20 bg-white">
+        <div class="max-w-4xl mx-auto px-6">
+            <h2 class="text-3xl font-bold text-slate-900 mb-8">The Base Matters More Than The Paver</h2>
+            <div class="prose prose-lg text-slate-600">
+                <p>
+                    In Pakenham, you cannot just lay pavers on crushed rock. The soil moves too much. We spec a <strong>100mm reinforced concrete sub-base</strong> for almost all our premium paving work. This ensures that when the clay shrinks in summer and swells in winter, your expensive Travertine doesn't crack or un-level.
+                </p>
+            </div>
+             <div class="grid gap-8 mt-12">
+                <div class="p-6 border border-slate-200 rounded-xl">
+                    <h3 class="font-bold text-xl text-slate-900 mb-2">Crazy Paving</h3>
+                    <p class="text-slate-600">Using random shards of Castlemaine slate or Bluestone. Extremely popular in modern native gardens. High visual impact.</p>
+                </div>
+                 <div class="p-6 border border-slate-200 rounded-xl">
+                    <h3 class="font-bold text-xl text-slate-900 mb-2">Sawn Bluestone</h3>
+                    <p class="text-slate-600">Clean, crisp, and timeless. Perfect for modern Pakenham East builds. We use high-grade Australian Harkaway bluestone.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+</Layout>

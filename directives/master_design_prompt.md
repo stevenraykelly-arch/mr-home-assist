@@ -67,8 +67,11 @@ Every page MUST use a reusable `<SEO />` component:
 **Mandatory Technical Checklist:**
 *   **Semantic HTML:** Use `<section>`, `<article>`, `<header>`, `<footer>`, and proper `<h1>`-`<h6>` hierarchy.
 *   **Clean URLs:** Maintain a logical hierarchy (e.g., `/services/asphalt-repairs`).
-*   **Schema Markup:** Implement `ServiceAreaBusiness` schema on all pages and `FAQPage` schema for all FAQ sections.
-*   **Content Depth (FAQ):** MANDATORY. Every homepage must include a "Local Expert FAQ" section (min. 600 words) answering specific regulatory, environmental, and cost questions for the target area.
+*   **Schema Markup (JSON-LD):** MANDATORY. Do not rely on generic metadata. You must generate specific `LocalBusiness` schema (with explicit `geo`, `priceRange`, `areaServed`) and `FAQPage` schema for the Index page. Inject this via a `schema` prop in the SEO component.
+*   **Zero-Legacy Artifacts:** `Layout.astro` and `SEO.astro` configuration MUST use widely generic defaults (e.g., "Local Service Experts") if props are missing. NEVER hardcode a previous client's name (e.g., "Brisbane Bitumen") as a default.
+*   **Content Depth (FAQ & Silos):** MANDATORY. 
+    *   **FAQ:** Every homepage must include a "Local Expert FAQ" section.
+    *   **Silos:** You must create at least 4 dedicated Service Pages (e.g., `/services/retaining-walls`). Single-page sites are BANNED. Each service page must be 800+ words.
 *   **System Integration:** Update `App.tsx` (Routing), `Layout.tsx` (Linking), `sitemap.xml`, and `robots.txt` for every new page.
 
 ---

@@ -1,0 +1,49 @@
+---
+import Layout from '../../layouts/Layout.astro';
+
+const serviceSchema = JSON.stringify({
+  "@context": "https://schema.org",
+  "@type": "Service",
+  "name": "Drought Tolerant Design",
+  "provider": {
+    "@type": "LandscapingBusiness",
+    "name": "Pakenham Landscapers",
+    "image": "https://pakenhamlandscapers.com.au/images/hero.png"
+  },
+  "areaServed": {
+    "@type": "City",
+    "name": "Pakenham"
+  },
+  "description": "Native and drought-tolerant landscape design featuring Australian plants. Low maintenance gardens that thrive in Pakenham's climate.",
+  "serviceType": "LandscapeDesign"
+});
+---
+
+<Layout 
+    title="Native Landscape Design Pakenham | Drought Tolerant Gardens" 
+    description="Beautiful, hardy gardens using Australian native plants. Wicking beds, crushed rock paths, and species that survive Pakenham's dry summers."
+    schema={serviceSchema}
+>
+    <section class="relative py-24 bg-slate-900 overflow-hidden">
+        <div class="fixed inset-0 pointer-events-none opacity-[0.4] z-[0] bg-[url('https://www.transparenttextures.com/patterns/concrete-wall.png')] mix-blend-multiply"></div>
+        <div class="relative z-10 max-w-7xl mx-auto px-6">
+            <h1 class="text-5xl lg:text-6xl font-extrabold text-white mb-6">
+                Native & <span class="text-emerald-500">Resilient</span>.
+            </h1>
+            <p class="text-xl text-slate-300 max-w-2xl leading-relaxed">
+                Gardens that look lush but drink less. Specializing in Melaleuca, Acacia, and Banksia varieties that love our local climate.
+            </p>
+        </div>
+    </section>
+
+    <section class="py-20 bg-white">
+        <div class="max-w-4xl mx-auto px-6">
+            <h2 class="text-3xl font-bold text-slate-900 mb-8">Stop Watering, Start Enjoying</h2>
+            <div class="prose prose-lg text-slate-600">
+                <p>
+                    A "Drought Tolerant" garden doesn't mean just cactus and rocks. By selecting the right indigenous plants, we create soft, flowing, green spaces that attract native birds and require 70% less water than a traditional English garden.
+                </p>
+            </div>
+        </div>
+    </section>
+</Layout>

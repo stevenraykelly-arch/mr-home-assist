@@ -14,25 +14,29 @@ const services = [
         title: "Retaining Walls & Excavation", 
         description: "Specialist construction for Pakenham's sloping blocks. Compliant up to 1m height without permit. Concrete sleeper and timber options.", 
         icon: WallIcon,
-        image: "/images/retaining.png"
+        image: "/images/retaining.png",
+        link: "/services/retaining-walls"
     },
     { 
         title: "Paving & Hardscaping", 
         description: "High-end bluestone and crazy paving options. We design functional paths and entertainment areas that handle Pakenham's soil movement.", 
         icon: SunIcon,
-        image: "/images/paving.png"
+        image: "/images/paving.png",
+        link: "/services/paving"
     },
     { 
         title: "Soil Remediation & Drainage", 
         description: "Expert diagnosis and treatment for Pakenham's reactive clay soils. We install ag-drains, gypsum treatments, and organic amendments to prevent waterlogging.", 
         icon: CheckIcon, 
-        image: "/images/soil_drainage.png" 
+        image: "/images/soil_drainage.png",
+        link: "/services/soil-drainage"
     },
     { 
         title: "Drought Tolerant Design", 
         description: "Water-wise landscape design using native Melaleuca and Acacia species. Beautiful, low-maintenance gardens that thrive in Pakenham's dry summers.", 
         icon: LeafIcon,
-        image: "/images/drought_design.png"
+        image: "/images/drought_design.png",
+        link: "/services/drought-tolerant-design"
     }
 ];
 
@@ -183,7 +187,8 @@ const schema = JSON.stringify({
 
                 <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
                     {services.map(s => (
-                        <div class="group relative bg-slate-50 rounded-3xl overflow-hidden hover:shadow-2xl transition-all duration-500 border border-slate-100">
+                    {services.map(s => (
+                        <a href={s.link} class="group relative bg-slate-50 rounded-3xl overflow-hidden hover:shadow-2xl transition-all duration-500 border border-slate-100 block">
                             <div class="h-64 overflow-hidden relative">
                                 <img src={s.image} alt={s.title} class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" />
                                 <div class="absolute inset-0 bg-gradient-to-t from-slate-900/60 to-transparent"></div>
@@ -196,7 +201,8 @@ const schema = JSON.stringify({
                                 <p class="text-slate-500 leading-relaxed text-sm mb-6">{s.description}</p>
                                 <div class="text-emerald-600 font-bold text-xs uppercase tracking-widest group-hover:translate-x-2 transition-transform">Learn More →</div>
                             </div>
-                        </div>
+                        </a>
+                    ))}
                     ))}
                 </div>
             </div>
