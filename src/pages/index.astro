@@ -120,40 +120,40 @@ const schema = JSON.stringify({
     <!-- Background Texture -->
     <div class="fixed inset-0 pointer-events-none opacity-[0.4] z-[100] bg-[url('https://www.transparenttextures.com/patterns/concrete-wall.png')] mix-blend-multiply"></div>
 
-    <main class="flex min-h-screen flex-col items-center font-sans text-slate-800 bg-slate-50 selection:bg-emerald-500 selection:text-white">
+    <main class="flex min-h-screen flex-col items-center font-sans text-slate-800 bg-slate-50 selection:bg-orange-500 selection:text-white">
         
         {/* Hero Section */}
         <section class="relative w-full pt-40 pb-20 lg:pt-60 lg:pb-40 px-6 overflow-hidden">
             <div class="max-w-7xl mx-auto grid lg:grid-cols-2 gap-16 items-center">
                 <div class="relative z-10">
-                    <div class="inline-flex items-center gap-2 px-4 py-2 bg-emerald-50 text-emerald-700 rounded-full text-xs font-bold uppercase tracking-wider mb-8 border border-emerald-100">
-                        <span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span> Serving Phillip Island & Bass Coast
+                    <div class="inline-flex items-center gap-2 px-4 py-2 bg-sky-50 text-sky-900 rounded-full text-xs font-bold uppercase tracking-wider mb-8 border border-sky-100">
+                        <span class="w-2 h-2 rounded-full bg-orange-500 animate-pulse"></span> Serving Phillip Island & Bass Coast
                     </div>
                     <h1 class="text-5xl lg:text-7xl font-extrabold text-slate-900 leading-[1.1] mb-8 tracking-tight">
-                        <span class="text-transparent bg-clip-text bg-gradient-to-r from-emerald-600 to-teal-500">Mr Home Assist</span> <br />
+                        <span class="text-transparent bg-clip-text bg-gradient-to-r from-sky-900 to-sky-700">Mr Home Assist</span> <br />
                         Your Local Handyman.
                     </h1>
                     <p class="text-slate-600 text-lg lg:text-xl mb-10 max-w-lg leading-relaxed">
-                        Reliable <strong class="text-emerald-700">Property Maintenance</strong> and <strong class="text-emerald-700">Repairs</strong>. From deck rejuvenation to holiday home upkeep, we turn up on time, every time.
+                        Reliable <strong class="text-orange-600">Property Maintenance</strong> and <strong class="text-orange-600">Repairs</strong>. From deck rejuvenation to holiday home upkeep, we turn up on time, every time.
                     </p>
                     <div class="flex flex-col sm:flex-row gap-4">
-                        <a href="mailto:info@mrhomeassist.com.au" class="px-8 py-4 bg-slate-900 text-white rounded-xl font-bold text-lg hover:bg-emerald-600 transition-colors shadow-xl flex items-center justify-center gap-2">
+                        <a href="mailto:info@mrhomeassist.com.au" class="px-8 py-4 bg-slate-900 text-white rounded-xl font-bold text-lg hover:bg-orange-600 transition-colors shadow-xl flex items-center justify-center gap-2">
                             Request Quote
                         </a>
                         <div class="px-8 py-4 bg-white border border-slate-200 text-slate-600 rounded-xl font-medium flex items-center justify-center gap-2 shadow-sm">
-                            <div class="w-5 h-5 text-emerald-500" set:html={CheckIcon} /> 25+ Years Exp
+                            <div class="w-5 h-5 text-orange-500" set:html={CheckIcon} /> 25+ Years Exp
                         </div>
                     </div>
                 </div>
 
                 <div class="relative">
-                    <div class="absolute -inset-4 bg-emerald-500/10 rounded-[40px] rotate-3 blur-2xl"></div>
+                    <div class="absolute -inset-4 bg-orange-500/10 rounded-[40px] rotate-3 blur-2xl"></div>
                     <div class="relative rounded-[32px] overflow-hidden shadow-2xl border-4 border-white aspect-[4/3]">
                         <img src="/images/hero.jpg" alt="Phillip Island Decking and Handyman" class="w-full h-full object-cover transform hover:scale-105 transition-transform duration-700" />
                         
                         {/* Guarantee Badge */}
-                        <div class="absolute bottom-6 left-6 bg-white/95 backdrop-blur p-6 rounded-2xl shadow-xl border border-emerald-100 max-w-xs">
-                            <div class="text-emerald-600 font-black text-sm uppercase tracking-wider mb-1">Our Promise</div>
+                        <div class="absolute bottom-6 left-6 bg-white/95 backdrop-blur p-6 rounded-2xl shadow-xl border border-sky-100 max-w-xs">
+                            <div class="text-orange-600 font-black text-sm uppercase tracking-wider mb-1">Our Promise</div>
                             <div class="font-bold text-slate-900 text-lg leading-tight">"On Time. Upfront Pricing. Quality Work."</div>
                         </div>
                     </div>
@@ -180,12 +180,12 @@ const schema = JSON.stringify({
                                 <div class="absolute inset-0 bg-gradient-to-t from-slate-900/60 to-transparent"></div>
                             </div>
                             <div class="p-8 relative">
-                                <div class="absolute -top-10 right-8 w-16 h-16 bg-white rounded-2xl flex items-center justify-center text-emerald-600 shadow-lg group-hover:bg-emerald-600 group-hover:text-white transition-colors duration-300">
+                                <div class="absolute -top-10 right-8 w-16 h-16 bg-white rounded-2xl flex items-center justify-center text-orange-600 shadow-lg group-hover:bg-orange-600 group-hover:text-white transition-colors duration-300">
                                     <div class="w-8 h-8" set:html={s.icon} />
                                 </div>
                                 <h3 class="text-xl font-bold text-slate-900 mb-4 pr-12">{s.title}</h3>
                                 <p class="text-slate-500 leading-relaxed text-sm mb-6">{s.description}</p>
-                                <div class="text-emerald-600 font-bold text-xs uppercase tracking-widest group-hover:translate-x-2 transition-transform">Get Quote →</div>
+                                <div class="text-orange-600 font-bold text-xs uppercase tracking-widest group-hover:translate-x-2 transition-transform">Get Quote →</div>
                             </div>
                         </a>
                     ))}
@@ -197,21 +197,21 @@ const schema = JSON.stringify({
         <section class="w-full py-32 bg-slate-900 text-slate-300 px-6">
             <div class="max-w-4xl mx-auto">
                 <div class="mb-16">
-                     <span class="text-emerald-500 font-bold tracking-widest uppercase text-xs">Technical Specifications</span>
+                     <span class="text-orange-500 font-bold tracking-widest uppercase text-xs">Technical Specifications</span>
                      <h2 class="text-4xl lg:text-5xl font-bold text-white mt-4 mb-8">Building on the Coast?</h2>
                      <p class="text-lg text-slate-400">We understand the specific challenges of maintaining property in the Bass Coast's salt-air environment.</p>
                 </div>
 
                 <div class="grid gap-6 mb-24">
-                    <div class="bg-slate-800/50 p-8 rounded-2xl border border-slate-700 hover:border-emerald-500/50 transition-colors">
+                    <div class="bg-slate-800/50 p-8 rounded-2xl border border-slate-700 hover:border-orange-500/50 transition-colors">
                         <h4 class="text-white font-bold text-lg mb-2">Salt & Corrosion Protection</h4>
                         <p class="text-sm leading-relaxed">Phillip Island's salt spray is highly corrosive. We use <strong>316 Marine Grade Stainless Steel</strong> fixtures for all decking and outdoor repairs to prevent rust and ensure longevity, unlike standard galvanised fixings.</p>
                     </div>
-                    <div class="bg-slate-800/50 p-8 rounded-2xl border border-slate-700 hover:border-emerald-500/50 transition-colors">
+                    <div class="bg-slate-800/50 p-8 rounded-2xl border border-slate-700 hover:border-orange-500/50 transition-colors">
                         <h4 class="text-white font-bold text-lg mb-2">Timber Decking Care</h4>
                         <p class="text-sm leading-relaxed">Coastal sun and wind strip timber quickly. We recommend and use deep-penetrating oils (like Cutek) rather than surface coatings that peel. This allows the timber to breathe and withstand the expansion/contraction of our variable climate.</p>
                     </div>
-                     <div class="bg-slate-800/50 p-8 rounded-2xl border border-slate-700 hover:border-emerald-500/50 transition-colors">
+                     <div class="bg-slate-800/50 p-8 rounded-2xl border border-slate-700 hover:border-orange-500/50 transition-colors">
                         <h4 class="text-white font-bold text-lg mb-2">Holiday Rental Standards</h4>
                         <p class="text-sm leading-relaxed">For AirBNB and holiday home owners, we provide proactive maintenance checks. We ensure decks are safe, handrails are secure, and properties are compliant with safety standards for guest peace of mind.</p>
                     </div>
@@ -222,19 +222,19 @@ const schema = JSON.stringify({
                     <h3 class="text-3xl font-bold text-white mb-12">Common Questions</h3>
                     <div class="space-y-8">
                         <div>
-                            <h4 class="text-xl font-bold text-emerald-400 mb-2">Where do you service?</h4>
+                            <h4 class="text-xl font-bold text-orange-400 mb-2">Where do you service?</h4>
                             <p class="leading-relaxed">We service the entire Phillip Island area (Cowes, Ventnor, Rhyll, Smiths Beach, Sunderland Bay, Surf Beach, Cape Woolamai, Newhaven) and San Remo.</p>
                         </div>
                         <div>
-                            <h4 class="text-xl font-bold text-emerald-400 mb-2">Do you charge for quotes?</h4>
+                            <h4 class="text-xl font-bold text-orange-400 mb-2">Do you charge for quotes?</h4>
                             <p class="leading-relaxed">No. We provide free, upfront quotes for all jobs. We believe in transparency so you know exactly what the job will cost before we start.</p>
                         </div>
                         <div>
-                            <h4 class="text-xl font-bold text-emerald-400 mb-2">Can you fix my rotting deck?</h4>
+                            <h4 class="text-xl font-bold text-orange-400 mb-2">Can you fix my rotting deck?</h4>
                             <p class="leading-relaxed">Yes. Deck repairs are a specialty. We can assess if the sub-structure is sound and simply replace the decking boards, or if structural repairs are needed. We try to save the deck where possible to save you money.</p>
                         </div>
                         <div>
-                            <h4 class="text-xl font-bold text-emerald-400 mb-2">Do you do small jobs?</h4>
+                            <h4 class="text-xl font-bold text-orange-400 mb-2">Do you do small jobs?</h4>
                             <p class="leading-relaxed">Absolutely. From fixing a sticking door, hanging a picture, or patching a hole in the plaster, no job is too small. That's what a good handyman is for!</p>
                         </div>
                     </div>
@@ -243,11 +243,11 @@ const schema = JSON.stringify({
         </section>
 
         {/* Locations Ticker */}
-        <div class="w-full py-12 bg-emerald-600 overflow-hidden relative">
+        <div class="w-full py-12 bg-sky-900 overflow-hidden relative">
             <div class="flex gap-16 whitespace-nowrap animate-marquee opacity-80">
                 {[...locations, ...locations, ...locations].map(loc => (
-                    <span class="text-emerald-100 font-bold text-2xl uppercase tracking-widest flex items-center gap-8">
-                        {loc} <div class="w-2 h-2 bg-emerald-900/30 rounded-full"></div>
+                    <span class="text-sky-100 font-bold text-2xl uppercase tracking-widest flex items-center gap-8">
+                        {loc} <div class="w-2 h-2 bg-white/30 rounded-full"></div>
                     </span>
                 ))}
             </div>
