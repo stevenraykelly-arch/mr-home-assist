@@ -5,7 +5,7 @@ import sitemap from '@astrojs/sitemap';
 
 // https://astro.build/config
 export default defineConfig({
-    site: 'https://landscaperspakenham.com.au',
+    site: 'https://mrhomeassist.com.au',
     integrations: [tailwind() /*, sitemap() */],
     server: {
         host: true
@@ -15,10 +15,10 @@ export default defineConfig({
     },
     vite: {
         server: {
-            allowedHosts: ['landscaperspakenham.com.au', 'www.landscaperspakenham.com.au', 'w4cw84cwkwskc0cw4c80gs8k.170.64.136.227.sslip.io']
+            allowedHosts: ['mrhomeassist.com.au', 'www.mrhomeassist.com.au', 'bokk8sowsccckgssoo4s80go.170.64.136.227.sslip.io']
         },
         preview: {
-            allowedHosts: ['landscaperspakenham.com.au', 'www.landscaperspakenham.com.au', 'w4cw84cwkwskc0cw4c80gs8k.170.64.136.227.sslip.io']
+            allowedHosts: ['mrhomeassist.com.au', 'www.mrhomeassist.com.au', 'bokk8sowsccckgssoo4s80go.170.64.136.227.sslip.io']
         }
     }
 });

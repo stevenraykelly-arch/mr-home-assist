@@ -18,14 +18,16 @@ try:
     if resp.status_code == 200:
         data = resp.json()
         if isinstance(data, dict) and 'deployments' in data:
-            if len(data['deployments']) > 0:
-                uuid = data['deployments'][0].get('uuid')
-                status = data['deployments'][0].get('status')
-                print(f"Latest Deployment UUID: {uuid} | Status: {status}")
+                print(f"Latest Deployment Object: {d}")
+                uuid = d.get('uuid') or d.get('id') # Fallback
+                status = d.get('status')
         elif isinstance(data, list):
              if len(data) > 0:
-                 uuid = data[0].get('uuid')
-                 status = data[0].get('status')
+                 d = data[0]
+                 print(f"List Item 0 Keys: {d.keys()}")
+                 uuid = d.get('uuid')
+                 if not uuid: uuid = d.get('deployment_uuid') # Try alternative
+                 status = d.get('status')
                  print(f"Latest Deployment UUID: {uuid} | Status: {status}")
     else:
         print(f"Error listing: {resp.status_code}")
@@ -69,3 +71,8 @@ if uuid:
             print(f"Error fetching detail: {resp.status_code}")
     except Exception as e:
         print(f"Error fetching logs: {e}")
+
+if uuid:
+    print("-" * 30)
+    print(f"FINAL STATUS CHECK: {status}")
+    print("-" * 30)
