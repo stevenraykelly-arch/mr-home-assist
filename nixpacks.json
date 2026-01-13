@@ -1,0 +1,22 @@
+{
+    "phases": {
+        "setup": {
+            "nixPkgs": [
+                "nodejs_20"
+            ],
+            "aptPkgs": [
+                "git"
+            ]
+        },
+        "install": {
+            "cmds": [
+                "npm ci --omit=dev"
+            ]
+        },
+        "build": {
+            "cmds": [
+                "npm run build"
+            ]
+        }
+    }
+}

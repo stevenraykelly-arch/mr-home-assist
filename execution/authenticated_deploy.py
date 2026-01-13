@@ -1,6 +1,7 @@
 import os
 import requests
 import sys
+import json
 from dotenv import load_dotenv
 
 def main():
@@ -23,11 +24,14 @@ def main():
     
     print(f"Triggering authenticated deploy for {app_uuid}...")
     try:
-        resp = requests.post(url, headers=headers)
-        if resp.status_code == 200:
-             print(f"Success: {resp.json()}")
+        response = requests.post(url, headers=headers)
+        
+        if response.status_code == 200:
+            print("Success:")
+            print(json.dumps(response.json(), indent=2))
         else:
-             print(f"Failed: {resp.status_code} - {resp.text}")
+            print(f"Error ({response.status_code}):")
+            print(response.text)
     except Exception as e:
         print(f"Error: {e}")
 
