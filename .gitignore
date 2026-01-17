@@ -1,5 +1,5 @@
 # Build
-/
+
 .next/
 node_modules/
 .astro/
