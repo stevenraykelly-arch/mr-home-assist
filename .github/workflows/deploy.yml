@@ -16,5 +16,10 @@ jobs:
           storageZoneName: "bunny-bulk-store1-sydney"
           storagePassword: "${{ secrets.BUNNY_STORAGE_PASSWORD }}"
           accessKey: "${{ secrets.BUNNY_ACCESS_KEY }}"
-          pullZoneId: "5179130"
           upload: "true"
+      
+      - name: Purge Cache
+        run: |
+            curl --request POST \
+            --url https://api.bunny.net/pullzone/5179130/purgeCache \
+            --header 'AccessKey: ${{ secrets.BUNNY_ACCESS_KEY }}'
