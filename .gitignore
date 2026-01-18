@@ -1,5 +1,5 @@
 node_modules/
-dist/
+
 .env
 config.env
 execution/service_account.json
