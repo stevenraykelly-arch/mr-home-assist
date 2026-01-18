@@ -1,0 +1,29 @@
+deploy	Set up job	﻿2026-01-18T03:31:59.1494637Z Current runner version: '2.331.0'
+deploy	Set up job	2026-01-18T03:31:59.1521976Z ##[group]Runner Image Provisioner
+deploy	Set up job	2026-01-18T03:31:59.1522861Z Hosted Compute Agent
+deploy	Set up job	2026-01-18T03:31:59.1523420Z Version: 20251211.462
+deploy	Set up job	2026-01-18T03:31:59.1524125Z Commit: 6cbad8c2bb55d58165063d031ccabf57e2d2db61
+deploy	Set up job	2026-01-18T03:31:59.1524843Z Build Date: 2025-12-11T16:28:49Z
+deploy	Set up job	2026-01-18T03:31:59.1525495Z Worker ID: {1af9e6a6-c5f8-4a3f-aa8b-be7ce4d4ee18}
+deploy	Set up job	2026-01-18T03:31:59.1526566Z ##[endgroup]
+deploy	Set up job	2026-01-18T03:31:59.1527149Z ##[group]Operating System
+deploy	Set up job	2026-01-18T03:31:59.1527717Z Ubuntu
+deploy	Set up job	2026-01-18T03:31:59.1528264Z 24.04.3
+deploy	Set up job	2026-01-18T03:31:59.1528751Z LTS
+deploy	Set up job	2026-01-18T03:31:59.1529236Z ##[endgroup]
+deploy	Set up job	2026-01-18T03:31:59.1529770Z ##[group]Runner Image
+deploy	Set up job	2026-01-18T03:31:59.1530307Z Image: ubuntu-24.04
+deploy	Set up job	2026-01-18T03:31:59.1530802Z Version: 20260111.209.1
+deploy	Set up job	2026-01-18T03:31:59.1531873Z Included Software: https://github.com/actions/runner-images/blob/ubuntu24/20260111.209/images/ubuntu/Ubuntu2404-Readme.md
+deploy	Set up job	2026-01-18T03:31:59.1533244Z Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu24%2F20260111.209
+deploy	Set up job	2026-01-18T03:31:59.1534530Z ##[endgroup]
+deploy	Set up job	2026-01-18T03:31:59.1535631Z ##[group]GITHUB_TOKEN Permissions
+deploy	Set up job	2026-01-18T03:31:59.1537916Z Contents: read
+deploy	Set up job	2026-01-18T03:31:59.1538465Z Metadata: read
+deploy	Set up job	2026-01-18T03:31:59.1538975Z Packages: read
+deploy	Set up job	2026-01-18T03:31:59.1539584Z ##[endgroup]
+deploy	Set up job	2026-01-18T03:31:59.1541580Z Secret source: Actions
+deploy	Set up job	2026-01-18T03:31:59.1542670Z Prepare workflow directory
+deploy	Set up job	2026-01-18T03:31:59.1872889Z Prepare all required actions
+deploy	Set up job	2026-01-18T03:31:59.1912759Z Getting action download info
+deploy	Set up job	2026-01-18T03:31:59.5017848Z ##[error]Unable to resolve action ayashige/bunnycdn-storage-deploy, repository not found

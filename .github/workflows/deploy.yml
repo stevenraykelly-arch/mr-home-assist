@@ -12,7 +12,7 @@ jobs:
           npm ci
           npm run build
       - name: Upload to BunnyCDN
-        uses: ayashige/bunnycdn-storage-deploy@v1
+        uses: ayeressian/bunnycdn-storage-deploy@v2.2.5
         with:
           source: "dist" 
           storageZoneName: "bunny-bulk-store1-sydney"
