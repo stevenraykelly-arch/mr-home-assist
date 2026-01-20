@@ -13,15 +13,13 @@
             </div>
 
             {/* Placeholder for Custom Form Code */}
-            <form action="https://formsubmit.co/steve@coolgreengroup.com.au" method="POST" class="space-y-6">
-                <!-- Honey Pot to prevent spam -->
-                <input type="text" name="_honey" style="display:none">
-                
-                <!-- Disable Captcha (Optional: Remove if you want weird pictures) -->
-                <input type="hidden" name="_captcha" value="false">
+            <form action="https://api.web3forms.com/submit" method="POST" class="space-y-6">
+                <input type="hidden" name="access_key" value="cea34109-4db6-48d2-9349-6c55ca7e58be">
+                <input type="hidden" name="subject" value="New Enquiry | Garden Edge">
+                <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
                 
                 <!-- Success Page -->
-                <input type="hidden" name="_next" value="https://localrankadvantage.shop/thank-you">
+                <input type="hidden" name="redirect" value="https://localrankadvantage.shop/thank-you">
 
                 <div class="grid md:grid-cols-2 gap-6">
                     <div class="space-y-2">
