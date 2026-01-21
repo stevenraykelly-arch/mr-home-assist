@@ -1,4 +1,4 @@
 User-agent: *
 Disallow:
 
-Sitemap: /sitemap-index.xml
+Sitemap: https://retainingwalls.com/sitemap-index.xml

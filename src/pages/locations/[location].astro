@@ -28,9 +28,33 @@ const { name, post_code } = Astro.props;
 
 const title = `Msg Retaining Walls ${name} | Retaining Walls Melbourne`;
 const description = `Professional retaining wall construction and repair in ${name} ${post_code}. Concrete sleepers, timber walls and engineering for the ${name} area.`;
+
+const schema = JSON.stringify({
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "name": "Retaining Walls Melbourne",
+  "telephone": "0400000000",
+  "email": "info@retainingwalls.com",
+  "url": `https://retainingwalls.com/locations/${location}`,
+  "image": "https://retainingwalls.com/images/hero.webp",
+  "description": description,
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Melbourne",
+    "addressRegion": "VIC",
+    "postalCode": post_code,
+    "addressCountry": "AU"
+  },
+  "areaServed": {
+    "@type": "Place",
+    "name": name,
+    "postalCode": post_code
+  },
+  "priceRange": "$$"
+});
 ---
 
-<Layout title={title} description={description}>
+<Layout title={title} description={description} schema={schema}>
     <main>
         <section class="bg-slate-900 py-32 text-center text-white">
             <h1 class="text-5xl font-bold mb-6">Serving {name}</h1>
@@ -69,21 +93,21 @@ const description = `Professional retaining wall construction and repair in ${na
                             <li class="flex gap-4">
                                 <div class="w-2 h-2 mt-2 bg-amber-500 rounded-full shrink-0"></div>
                                 <div>
-                                    <strong class="block text-slate-900">Concrete Sleeper Walls</strong>
+                                    <a href="/services/concrete-sleeper-retaining-walls" class="block font-bold text-slate-900 hover:text-amber-600 transition-colors">Concrete Sleeper Walls</a>
                                     <span class="text-slate-600">The most popular choice for modern {name} homes. Available in various finishes (timber-look, stone, smooth) and built to last 60+ years.</span>
                                 </div>
                             </li>
                             <li class="flex gap-4">
                                 <div class="w-2 h-2 mt-2 bg-amber-500 rounded-full shrink-0"></div>
                                 <div>
-                                    <strong class="block text-slate-900">Timber Retaining Walls</strong>
+                                    <a href="/services/timber-retaining-walls" class="block font-bold text-slate-900 hover:text-amber-600 transition-colors">Timber Retaining Walls</a>
                                     <span class="text-slate-600">A cost-effective solution using treated pine or hardwood. Ideal for garden beds and aesthetic landscaping features in {name}.</span>
                                 </div>
                             </li>
                             <li class="flex gap-4">
                                 <div class="w-2 h-2 mt-2 bg-amber-500 rounded-full shrink-0"></div>
                                 <div>
-                                    <strong class="block text-slate-900">Wall Repairs & Replacement</strong>
+                                    <a href="/services/retaining-wall-repair" class="block font-bold text-slate-900 hover:text-amber-600 transition-colors">Wall Repairs & Replacement</a>
                                     <span class="text-slate-600">Do you have a leaning wall in {name}? We can often repair failing structures or replace them entirely with a modern, engineered solution.</span>
                                 </div>
                             </li>
