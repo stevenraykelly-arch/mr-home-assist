@@ -38,13 +38,104 @@ const description = `Professional retaining wall construction and repair in ${na
         </section>
         
         <section class="py-20 px-6 max-w-7xl mx-auto">
-            <h2 class="text-3xl font-bold mb-8 text-slate-900">Retaining Walls in {name}</h2>
-            <p class="mb-6">We understand the specific soil conditions in {name}, providing engineered solutions that last. Whether you need a new concrete sleeper wall or repairs to an existing timber structure, we are your local experts.</p>
-            
-            <div class="mt-12 p-8 bg-amber-50 rounded-2xl border border-amber-100">
-                <h3 class="text-xl font-bold text-slate-800 mb-4">Get a Quote for your {name} project</h3>
-                <p class="mb-6">Contact us today for a free site assessment and measure up in {name} {post_code}.</p>
-                <a href="#contact" class="inline-block px-8 py-4 bg-slate-900 text-white rounded-xl font-bold hover:bg-slate-800 transition-colors">Request Consultation</a>
+            <div class="grid lg:grid-cols-3 gap-12">
+                
+                {/* Main Content Column */}
+                <div class="lg:col-span-2 space-y-12">
+                    
+                    <div>
+                        <h2 class="text-3xl font-bold mb-6 text-slate-900">Professional Retaining Wall Construction in {name}</h2>
+                        <p class="mb-4 leading-relaxed text-slate-600">
+                            Finding a reliable retaining wall builder in <strong class="text-slate-900">{name} ({post_code})</strong> can be a challenge. You need a team that understands not just construction, but the specific landscape and soil conditions of our local area. 
+                        </p>
+                        <p class="leading-relaxed text-slate-600">
+                            At <strong>Retaining Walls Melbourne</strong>, we have extensive experience working throughout the South Eastern suburbs. Whether you reside on a sloping block that requires significant earthworks or simply need to replace an old, rotting timber sleeper wall, our team handles the entire process from design and engineering to the final build.
+                        </p>
+                    </div>
+
+                    <div>
+                        <h3 class="text-2xl font-bold mb-4 text-slate-900">Understanding {name}'s Soil & Terrain</h3>
+                        <p class="mb-4 leading-relaxed text-slate-600">
+                            Many properties in {name} sit on reactive clay soils. This soil type expands when wet and shrinks when dry, creating significant hydrostatic pressure that can cause poorly built walls to lean or crack over time.
+                        </p>
+                        <p class="leading-relaxed text-slate-600">
+                            We specifically engineer our walls for {name}'s conditions. This typically involves using <strong>deep-bored concrete piers</strong> reinforced with steel H-beams (UPCs) to anchor the wall into the stable ground beneath the active soil layer. This ensures your investment stands the test of time, regardless of the weather.
+                        </p>
+                    </div>
+
+                    <div>
+                        <h3 class="text-2xl font-bold mb-4 text-slate-900">Our Services in {name}</h3>
+                        <ul class="space-y-4">
+                            <li class="flex gap-4">
+                                <div class="w-2 h-2 mt-2 bg-amber-500 rounded-full shrink-0"></div>
+                                <div>
+                                    <strong class="block text-slate-900">Concrete Sleeper Walls</strong>
+                                    <span class="text-slate-600">The most popular choice for modern {name} homes. Available in various finishes (timber-look, stone, smooth) and built to last 60+ years.</span>
+                                </div>
+                            </li>
+                            <li class="flex gap-4">
+                                <div class="w-2 h-2 mt-2 bg-amber-500 rounded-full shrink-0"></div>
+                                <div>
+                                    <strong class="block text-slate-900">Timber Retaining Walls</strong>
+                                    <span class="text-slate-600">A cost-effective solution using treated pine or hardwood. Ideal for garden beds and aesthetic landscaping features in {name}.</span>
+                                </div>
+                            </li>
+                            <li class="flex gap-4">
+                                <div class="w-2 h-2 mt-2 bg-amber-500 rounded-full shrink-0"></div>
+                                <div>
+                                    <strong class="block text-slate-900">Wall Repairs & Replacement</strong>
+                                    <span class="text-slate-600">Do you have a leaning wall in {name}? We can often repair failing structures or replace them entirely with a modern, engineered solution.</span>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div>
+                        <h3 class="text-2xl font-bold mb-4 text-slate-900">Permits & Regulations in {name}</h3>
+                        <p class="leading-relaxed text-slate-600">
+                            Building regulations can be complex. Generally, any wall over 1m high, or one that sits on a boundary or supports a load (like a driveway), will require a building permit. We handle all dealings with the local council for you, ensuring your project in {name} is fully compliant with the Victorian Building Regulations.
+                        </p>
+                    </div>
+
+                </div>
+
+                {/* Sidebar Column */}
+                <div class="space-y-8">
+                    
+                    {/* CTA Box */}
+                    <div class="p-8 bg-slate-900 rounded-2xl text-white shadow-xl relative overflow-hidden">
+                        <div class="absolute top-0 right-0 w-32 h-32 bg-amber-500 rounded-bl-full opacity-20"></div>
+                        <h3 class="text-2xl font-bold mb-4 relative z-10">Live in {name}?</h3>
+                        <p class="mb-6 text-slate-300 relative z-10">Get a free, no-obligation site assessment and fixed-price quote.</p>
+                        <a href="#contact" class="block w-full py-4 bg-amber-600 text-white text-center font-bold rounded-xl hover:bg-amber-700 transition-colors relative z-10">
+                            Get a Quote
+                        </a>
+                    </div>
+
+                    {/* Quick Facts */}
+                    <div class="p-8 bg-amber-50 rounded-2xl border border-amber-100">
+                        <h4 class="font-bold text-slate-900 mb-4 uppercase tracking-widest text-xs">Project Quick Facts</h4>
+                        <dl class="space-y-4 text-sm">
+                            <div class="flex justify-between border-b border-amber-200 pb-2">
+                                <dt class="text-slate-600">Service Area</dt>
+                                <dd class="font-bold text-slate-900">{name}</dd>
+                            </div>
+                            <div class="flex justify-between border-b border-amber-200 pb-2">
+                                <dt class="text-slate-600">Postcode</dt>
+                                <dd class="font-bold text-slate-900">{post_code}</dd>
+                            </div>
+                            <div class="flex justify-between border-b border-amber-200 pb-2">
+                                <dt class="text-slate-600">Best Soil Match</dt>
+                                <dd class="font-bold text-slate-900">Concrete Sleepers</dd>
+                            </div>
+                            <div class="flex justify-between">
+                                <dt class="text-slate-600">Warranty</dt>
+                                <dd class="font-bold text-slate-900">7 Years (Structural)</dd>
+                            </div>
+                        </dl>
+                    </div>
+
+                </div>
             </div>
         </section>
     </main>
