@@ -4,8 +4,21 @@ import SEO from '../../components/SEO.astro';
 
 export function getStaticPaths() {
   const locations = [
-    { params: { location: 'location-a' }, props: { name: 'Location A', post_code: '0000' } },
-    { params: { location: 'location-b' }, props: { name: 'Location B', post_code: '0000' } },
+    { params: { location: 'glen-waverley' }, props: { name: 'Glen Waverley', post_code: '3150' } },
+    { params: { location: 'mount-waverley' }, props: { name: 'Mount Waverley', post_code: '3149' } },
+    { params: { location: 'burwood' }, props: { name: 'Burwood', post_code: '3125' } },
+    { params: { location: 'box-hill' }, props: { name: 'Box Hill', post_code: '3128' } },
+    { params: { location: 'blackburn' }, props: { name: 'Blackburn', post_code: '3130' } },
+    { params: { location: 'nunawading' }, props: { name: 'Nunawading', post_code: '3131' } },
+    { params: { location: 'doncaster' }, props: { name: 'Doncaster', post_code: '3108' } },
+    { params: { location: 'templestowe' }, props: { name: 'Templestowe', post_code: '3106' } },
+    { params: { location: 'ringwood' }, props: { name: 'Ringwood', post_code: '3134' } },
+    { params: { location: 'croydon' }, props: { name: 'Croydon', post_code: '3136' } },
+    { params: { location: 'wantirna' }, props: { name: 'Wantirna', post_code: '3152' } },
+    { params: { location: 'ferntree-gully' }, props: { name: 'Ferntree Gully', post_code: '3156' } },
+    { params: { location: 'rowville' }, props: { name: 'Rowville', post_code: '3178' } },
+    { params: { location: 'mulgrave' }, props: { name: 'Mulgrave', post_code: '3170' } },
+    { params: { location: 'wheelers-hill' }, props: { name: 'Wheelers Hill', post_code: '3150' } },
   ];
   return locations;
 }
@@ -27,6 +40,12 @@ const description = `Professional retaining wall construction and repair in ${na
         <section class="py-20 px-6 max-w-7xl mx-auto">
             <h2 class="text-3xl font-bold mb-8 text-slate-900">Retaining Walls in {name}</h2>
             <p class="mb-6">We understand the specific soil conditions in {name}, providing engineered solutions that last. Whether you need a new concrete sleeper wall or repairs to an existing timber structure, we are your local experts.</p>
+            
+            <div class="mt-12 p-8 bg-amber-50 rounded-2xl border border-amber-100">
+                <h3 class="text-xl font-bold text-slate-800 mb-4">Get a Quote for your {name} project</h3>
+                <p class="mb-6">Contact us today for a free site assessment and measure up in {name} {post_code}.</p>
+                <a href="#contact" class="inline-block px-8 py-4 bg-slate-900 text-white rounded-xl font-bold hover:bg-slate-800 transition-colors">Request Consultation</a>
+            </div>
         </section>
     </main>
 </Layout>
