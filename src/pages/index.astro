@@ -304,9 +304,9 @@ const schema = JSON.stringify({
         <div class="w-full py-12 bg-sky-900 overflow-hidden relative">
             <div class="flex gap-16 whitespace-nowrap animate-marquee opacity-80">
                 {[...locations, ...locations, ...locations].map(loc => (
-                    <span class="text-sky-100 font-bold text-2xl uppercase tracking-widest flex items-center gap-8">
+                    <a href={`/locations/${loc.toLowerCase().replace(/\s+/g, '-')}`} class="text-sky-100 font-bold text-2xl uppercase tracking-widest flex items-center gap-8 hover:text-white transition-colors">
                         {loc} <div class="w-2 h-2 bg-white/30 rounded-full"></div>
-                    </span>
+                    </a>
                 ))}
             </div>
         </div>
