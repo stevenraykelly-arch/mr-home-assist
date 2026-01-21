@@ -1,0 +1,156 @@
+---
+import Layout from '../../layouts/Layout.astro';
+
+export function getStaticPaths() {
+  const services = [
+    { 
+        params: { service: 'concrete-sleeper-retaining-walls' }, 
+        props: { 
+            title: 'Concrete Sleeper Retaining Walls', 
+            seoTitle: 'Concrete Sleeper Retaining Walls Melbourne | Built to Last',
+            seoDesc: 'Heavy-duty concrete sleeper retaining walls engineered for Melbourne\'s reactive clay soils. Rot-proof, termite-proof, and structural/engineered designs.',
+            heroImage: '/images/service-1.png',
+            intro: 'The ultimate long-term solution for Melbourne properties. Engineered strength meets modern aesthetics.',
+            content: {
+                section1Title: "Why Choose Concrete Sleepers?",
+                section1Text: "For Melbourne's South Eastern suburbs, specifically those with reactive clay soil, concrete sleepers are the superior choice. Unlike timber, which will eventually rot and succumb to termite damage, specific concrete sleepers are engineered to last a lifetime. They provide the structural integrity needed to hold back significant soil loads without warping or bowing over time.",
+                section2Title: "Construction Specifications",
+                section2Text: "We don't cut corners. Our concrete walls are built with: <ul class='list-disc pl-5 mt-2 space-y-1'><li><strong>Hot Dipped Galvanized Steel Posts (UC):</strong> Universal Columns that resist rust and provide the backbone of the wall.</li><li><strong>Deep Bored Piers:</strong> Augered deep into the stable sub-soil to prevent tipping.</li><li><strong>40MPa Concrete:</strong> High-strength concrete mix for footings.</li><li><strong>Ag-Line Drainage:</strong> Comprehensive drainage systems compliant with building codes to relieve hydrostatic pressure.</li></ul>",
+                section3Title: "Styles & Finishes",
+                section3Text: "Concrete doesn't have to look industrial. We offer a range of finishes including: <ul class='list-disc pl-5 mt-2 space-y-1'><li><strong>Plain/Smooth:</strong> For a clean, modern look.</li><li><strong>Charcoal/Black:</strong> A popular choice for contrast in modern landscaping.</li><li><strong>Timber-Look:</strong> The aesthetic of wood with the durability of concrete.</li><li><strong>Stacked Stone:</strong> A premium textured finish.</li></ul>"
+            }
+        } 
+    },
+    { 
+        params: { service: 'timber-retaining-walls' }, 
+        props: { 
+            title: 'Timber Retaining Walls', 
+            seoTitle: 'Timber Retaining Walls Melbourne | Hardwood & Pine Solutions',
+            seoDesc: 'Cost-effective and aesthetic timber retaining walls. Treated pine and hardwood sleeper options perfect for garden beds and landscape features in Melbourne.',
+            heroImage: '/images/service-2.png',
+            intro: 'A classic, natural aesthetic for garden beds and cost-effective landscaping.',
+            content: {
+                section1Title: "The Natural Choice",
+                section1Text: "Timber retaining walls offer a warmth and natural appeal that blends seamlessly with garden landscapes. They are an excellent option for lower-height walls, garden beds, and terracing where the extreme structural rigidity of concrete might not be required (or where budget is a primary factor).",
+                section2Title: "Materials We Use",
+                section2Text: "Quality timber is essential for longevity. We use: <ul class='list-disc pl-5 mt-2 space-y-1'><li><strong>H4 Treated Pine:</strong> Protected against termites and decay, suitable for in-ground use. Ideal for budget-friendly projects.</li><li><strong>H5 Treated Pine:</strong> For critical structural applications with higher retention levels.</li><li><strong>Australian Hardwood:</strong> Premium species like Ironbark or Red Gum for superior durability and a stunning high-end finish.</li></ul>",
+                section3Title: "Installation Best Practices",
+                section3Text: "Even with timber, proper installation is key to preventing premature rot. We ensure: <ul class='list-disc pl-5 mt-2 space-y-1'><li>Proper drainage gravel behind the wall.</li><li>Geo-fabric to prevent soil clogging the drainage.</li><li>Galvanized steel uprights (optional) for extended lifespan compared to timber posts.</li></ul>"
+            }
+        } 
+    },
+    { 
+        params: { service: 'retaining-wall-repair' }, 
+        props: { 
+            title: 'Retaining Wall Repair', 
+            seoTitle: 'Retaining Wall Repair Melbourne | Fix Leaning & Cracked Walls',
+            seoDesc: 'Expert retaining wall repairs in Melbourne South East. We fix leaning walls, drainage issues, and structural failures. Assessment and rectification.',
+            heroImage: '/images/service-3.png',
+            intro: 'Expert diagnosis and rectification for failing, leaning, or cracked walls.',
+            content: {
+                section1Title: "Why Do Walls Fail?",
+                section1Text: "Retaining walls rarely fail without a cause. In Melbourne's South East, the most common culprits are: <ul class='list-disc pl-5 mt-2 space-y-1'><li><strong>Poor Drainage:</strong> Water builds up behind the wall (hydrostatic pressure), pushing it over.</li><li><strong>Reactive Clay:</strong> Soil expansion and contraction shifting shallow footings.</li><li><strong>Rot/Materail Failure:</strong> Old timber sleepers decaying and losing strength.</li><li><strong>Bad Engineering:</strong> Undersized posts or insufficient footing depth for the wall height.</li></ul>",
+                section2Title: "Our Repair Process",
+                section2Text: "We don't just patch over cracks. We diagnose the root cause. <ol class='list-decimal pl-5 mt-2 space-y-1'><li><strong>Site Assessment:</strong> We inspect the lean, soil conditions, and drainage.</li><li><strong>Engineering Review:</strong> Determining if the wall can be saved or needs replacement.</li><li><strong>Rectification:</strong> This may involve excavating behind the wall to install new drainage, adding 'deadman' anchors, or reinforcing the toe of the wall.</li></ol>",
+                section3Title: "Replacement vs. Repair",
+                section3Text: "Sometimes, a wall is too far gone. If your timber wall has extensive rot or your concrete wall has major structural cracks, replacement is often the safer and more cost-effective long-term option. We will provide an honest assessment and a fixed-price quote for the best path forward."
+            }
+        } 
+    },
+    { 
+        params: { service: 'design-permits' }, 
+        props: { 
+            title: 'Design & Permitting', 
+            seoTitle: 'Retaining Wall Design & Permits Melbourne | Council Approvals',
+            seoDesc: 'We handle retaining wall engineering, design, and building permits. Complete council approval management for Monash, Casey, Knox, and Whitehorse.',
+            heroImage: '/images/service-4.png',
+            intro: 'We navigate the council red tape so you don\'t have to.',
+            content: {
+                section1Title: "When Do You Need a Permit?",
+                section1Text: "In Victoria, building regulations are strict. You generally need a building permit if: <ul class='list-disc pl-5 mt-2 space-y-1'><li>The wall is over 1 meter in height.</li><li>The wall is within 1 meter of a boundary line.</li><li>The wall supports a surcharge load (e.g., a driveway, building, or another wall above it).</li></ul> constructing without a permit can lead to council fines and orders to demolish.",
+                section2Title: "Our Design Service",
+                section2Text: "We provide a turnkey solution. <ul class='list-disc pl-5 mt-2 space-y-1'><li><strong>Site Survey:</strong> Measuring levels and boundaries.</li><li><strong>Structural Engineering:</strong> Computations for post spacing, footing depth, and steel size types to ensure compliance.</li><li><strong>Drafting:</strong> producing working drawings for the builder and council.</li></ul>",
+                section3Title: "The Approval Process",
+                section3Text: "Dealing with councils like Monash, Knox, Whitehorse, and Casey can be time-consuming. We act as your agent, submitting all documents to the building surveyor, responding to RFIs (Requests for Information), and securing the Building Permit so construction can legally commence."
+            }
+        } 
+    },
+  ];
+  return services;
+}
+
+const { title, seoTitle, seoDesc, heroImage, intro, content } = Astro.props;
+---
+
+<Layout title={seoTitle} description={seoDesc}>
+    
+    <!-- Hero -->
+    <section class="relative pt-32 pb-20 lg:pt-48 lg:pb-32 overflow-hidden bg-slate-900">
+        <div class="absolute inset-0 z-0">
+             <!-- Overlay -->
+            <div class="absolute inset-0 bg-slate-900/90 z-10"></div>
+            <!-- Background Image (Optional, using the service image or a generic concrete texture) -->
+            <img src={heroImage} alt={title} class="w-full h-full object-cover opacity-30" />
+        </div>
+
+        <div class="relative z-10 max-w-7xl mx-auto px-6 text-center">
+            <span class="inline-block py-1 px-3 rounded-full bg-amber-500/20 text-amber-500 font-bold text-xs tracking-widest uppercase mb-6 border border-amber-500/30">
+                Premium Services
+            </span>
+            <h1 class="text-4xl lg:text-6xl font-extrabold text-white mb-6 tracking-tight">{title}</h1>
+            <p class="text-xl text-slate-300 max-w-2xl mx-auto leading-relaxed">{intro}</p>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <section class="py-20 px-6 bg-white">
+        <div class="max-w-7xl mx-auto grid lg:grid-cols-3 gap-16">
+            
+            <!-- Left Content -->
+            <div class="lg:col-span-2 space-y-12">
+                <div>
+                     <h2 class="text-3xl font-bold text-slate-900 mb-6">{content.section1Title}</h2>
+                     <div class="prose prose-lg text-slate-600 leading-relaxed" set:html={content.section1Text} />
+                </div>
+                
+                 <div>
+                     <h2 class="text-3xl font-bold text-slate-900 mb-6">{content.section2Title}</h2>
+                     <div class="prose prose-lg text-slate-600 leading-relaxed" set:html={content.section2Text} />
+                </div>
+
+                 <div>
+                     <h2 class="text-3xl font-bold text-slate-900 mb-6">{content.section3Title}</h2>
+                     <div class="prose prose-lg text-slate-600 leading-relaxed" set:html={content.section3Text} />
+                </div>
+            </div>
+
+            <!-- Sidebar -->
+            <div class="space-y-8">
+                <!-- CTA Box -->
+                <div class="bg-amber-50 p-8 rounded-3xl border border-amber-100">
+                    <h3 class="text-2xl font-bold text-slate-900 mb-4">Ready to start?</h3>
+                    <p class="text-slate-600 mb-6">Get a fixed-price quote for your {title.toLowerCase()} project today.</p>
+                    <a href="#quote" class="block w-full py-4 bg-slate-900 text-white text-center font-bold rounded-xl hover:bg-amber-700 transition-colors shadow-lg">
+                        Get Free Quote
+                    </a>
+                </div>
+
+                <!-- Service List -->
+                <div class="bg-white p-8 rounded-3xl border border-slate-100 shadow-sm">
+                    <h4 class="font-bold text-slate-900 mb-4 uppercase tracking-widest text-xs">Other Services</h4>
+                    <nav class="flex flex-col gap-3">
+                        <a href="/services/concrete-sleeper-retaining-walls" class="block p-3 rounded-lg hover:bg-slate-50 text-slate-600 hover:text-amber-700 transition-colors border border-transparent hover:border-slate-200">Concrete Sleeper Walls</a>
+                        <a href="/services/timber-retaining-walls" class="block p-3 rounded-lg hover:bg-slate-50 text-slate-600 hover:text-amber-700 transition-colors border border-transparent hover:border-slate-200">Timber Retaining Walls</a>
+                        <a href="/services/retaining-wall-repair" class="block p-3 rounded-lg hover:bg-slate-50 text-slate-600 hover:text-amber-700 transition-colors border border-transparent hover:border-slate-200">Wall Repair</a>
+                        <a href="/services/design-permits" class="block p-3 rounded-lg hover:bg-slate-50 text-slate-600 hover:text-amber-700 transition-colors border border-transparent hover:border-slate-200">Design & Permits</a>
+                    </nav>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Global Contact Form Wrapper -->
+    <!-- The ContactForm is already included in the Layout, so we just provide a visual transition or let the user scroll down. 
+         The #contact anchor should target the Layout's form. -->
+</Layout>
